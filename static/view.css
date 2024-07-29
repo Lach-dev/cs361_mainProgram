@@ -4,46 +4,75 @@
 
 body {
     font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     margin: 0;
-    background: linear-gradient(to right, #33ccff, #ff99cc);
+    padding: 20px;
+    background-color: #f0f8ff;
 }
 
 .container {
     width: 70%;
     max-width: 800px;
+    margin: 0 auto;
     background: white;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
 }
 
 h1 {
     margin-bottom: 20px;
 }
 
-.file-list {
+p {
+    line-height: 1.6;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+ul {
     list-style-type: none;
     padding: 0;
 }
 
-.file-item {
-    background: #f9f9f9;
-    padding: 10px;
-    margin: 5px 0;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-    width: 100%;
+ul li {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: #f9f9f9;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.delete-button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.delete-button:hover {
+    background-color: #ff1a1a;
+}
+
+.download-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.download-button:hover {
+    background-color: #45a049;
 }
 
 .back-link {

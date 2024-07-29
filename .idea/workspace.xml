@@ -5,16 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d26b7be1-0697-4b84-98d7-c7b2cd114c8b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/static/information.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/upload.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/view.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/delete.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/download.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/upload.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/view.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/information.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/information.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/view.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/view.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/delete.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +110,7 @@
       <workItem from="1722218956915" duration="4775000" />
       <workItem from="1722274337007" duration="74000" />
       <workItem from="1722281200159" duration="1153000" />
-      <workItem from="1722282832404" duration="7045000" />
+      <workItem from="1722282832404" duration="8107000" />
     </task>
     <servers />
   </component>
@@ -124,6 +118,6 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/mainprogram_cs361$mainProgram_cs361.coverage" NAME="mainProgram_cs361 Coverage Results" MODIFIED="1722291870958" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/mainprogram_cs361$mainProgram_cs361.coverage" NAME="mainProgram_cs361 Coverage Results" MODIFIED="1722292571225" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
