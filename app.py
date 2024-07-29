@@ -13,6 +13,11 @@ def home():
     return render_template('home.html')
 
 
+@app.route('/information')
+def information():
+    return render_template('information.html')
+
+
 @app.route('/register', methods=['GET', 'POST'])
 def register():
     if request.method == 'POST':

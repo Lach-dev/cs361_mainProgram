@@ -1,9 +1,14 @@
 <!doctype html>
 <html>
-<head><title>Home</title></head>
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='home.css') }}">
+</head>
 <body>
-  <h1>Home</h1>
-  <a href="{{ url_for('register') }}">Register</a> |
-  <a href="{{ url_for('login') }}">Login</a>
+  <ul>
+      <li><a href="{{ url_for('register') }}">Register</a></li>
+      <li><a href="{{ url_for('login') }}">Login</a></li>
+      <li><a href="{{  url_for('information') }}">Help and Info</a></li>
+  </ul>
 </body>
 </html>
