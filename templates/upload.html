@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='upload.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="upload-section">
+            <form method="POST" enctype="multipart/form-data">
+                <div class="upload-box">
+                    <div class="upload-icon">⬆️</div>
+                    <p>Drag and Drop file</p>
+                    <p>or</p>
+                    <input type="file" name="file" multiple>
+                    <button class="browse-button" type="submit">Upload</button>
+                </div>
+            </form>
+            <div class="file-list">
+                {% for file in files %}
+                <div class="file-item">
+                    <span>{{ file }}</span>
+                    <span class="file-status">✔️</span>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="action-icons">
+            <a href="/view" class="view-icon">👁️</a>
+            <a href="/download" class="download-icon">⬇️</a>
+            <a href="/delete" class="delete-icon">🗑️</a>
+        </div>
+        <p class="instruction">Click one of these icons to view, delete, or download your files!</p>
+        <a class="info-link" href="/information">Click here to learn more!</a>
+    </div>
+</body>
+</html>
