@@ -24,7 +24,8 @@ class User(BaseModel):
     password: str
 
 
-class UserInDB(User):
+class UserInDB(BaseModel):
+    username: str
     hashed_password: str
 
 
@@ -32,8 +33,13 @@ class UserInDB(User):
 async def register(user: User):
     if user.username in users:
         raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Username already exists.")
-    hashed_password = get_password_hash(user.password)
+
+    # Hash the user's password
+    hashed_password = pwd_context.hash(user.password)
+
+    # Store the user in the database with hashed password
     users[user.username] = UserInDB(username=user.username, hashed_password=hashed_password)
+
     return {"message": "Registration successful."}
 
 
